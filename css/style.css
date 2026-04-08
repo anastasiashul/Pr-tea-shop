@@ -1,0 +1,152 @@
+body {
+background: rgb(217, 249, 238);
+}
+
+nav ul { 
+    list-style-type: none; 
+}
+
+nav ul li:first-of-type a{
+    color: rgb(243, 126, 126);
+    font-size: 20px;
+    font-style: italic;
+}
+
+nav ul li:last-of-type a{
+    color: rgb(249, 137, 85);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.information h2 {
+    color:black;
+    font-size: 18px;
+    font-weight:400;
+    background: rgb(106, 248, 187);
+}
+
+.information p{
+    color:rgb(49, 5, 80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.information #short {
+    color:rgb(67, 0, 46);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.param ul{
+    list-style-type: none;
+}
+
+.param li{
+    position: relative;
+    color:rgb(38, 100, 1);
+    font-size: 17px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    padding-left: 40px;  
+    margin-bottom: 5px; 
+    min-height: 30px;  
+}
+
+.param li::before {
+    content: "";
+    position: absolute;
+    left: 0;          
+    top: -5px;
+    width: 25px;         
+    height: 25px;
+    background-image: url('../images/teacup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter {
+    padding: 15px;
+    background: rgb(236, 252, 251);
+    border: 2px solid rgb(14, 252, 193);
+    border-radius: 5px;
+}
+.filter label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    
+}
+
+#category-filter {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid rgb(153, 215, 183);
+    border-radius: 5px;
+    background: rgb(217, 249, 238);
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+    
+}
+
+.cart {
+    background: rgb(188, 236, 224);
+    border: 2px solid rgb(2, 224, 183);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0; 
+}
+.cart h2 {
+    border-bottom: 2px solid rgb(2, 172, 246);
+    padding-bottom: 5px;
+}
+.cart-item {
+    padding: 5px;
+    border-bottom: 2px solid rgb(2, 172, 246);
+}
+.remove-btn {
+    background: rgb(255, 219, 219);
+    color: rgb(181, 101, 3);
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 12px;
+}
+
+#clear-cart {
+    background: rgb(252, 218, 218);
+    color: rgb(186, 105, 5);
+    border: 1px solid red;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+#checkout {
+    background: rgb(219, 251, 231);
+    color: rgb(3, 173, 17);
+    border: 1px solid rgb(75, 252, 107);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+.products {
+    border: 1px solid rgb(114, 170, 247);
+    border-radius: 5px;
+}
+.product {
+    padding: 15px;
+    border: 2px solid rgb(3, 191, 144);
+    border-radius: 10px;
+}
+.add-to-cart {
+    background: rgb(219, 247, 211);
+    color: rgb(38, 100, 1);
+    border: 1px solid rgb(81, 234, 16);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+}

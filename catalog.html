@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Каталог</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                <li><a href="index.html" >Главная</a></li>
+                <li><a href="catalog.html" >Каталог</a></li>
+            </ul>
+
+            </nav>
+            
+        </header>
+        <main>
+            <hr>
+            <h1>Каталог</h1>
+            <div class="filter">
+                <label for="category-filter">Фильтр по категории:</label>
+                <select id="category-filter">
+                    <option value="all">Все чаи</option>
+                    <option value="black">Черный чай</option>
+                    <option value="green">Зеленый чай</option>
+                    <option value="puer">Пуэр</option>
+                </select>
+            </div>
+            <div class="cart">
+                <h2>Корзина</h2>
+                
+                <div id="cart-items">
+
+                </div>
+                <div id="cart-total" class="cart-total">Итого: 0 р</div>
+                <div class="cart-buttons">
+                    <button id="clear-cart">Очистить корзину</button>
+                    <button id="checkout">Оплатить</button>
+                </div>
+            </div>
+
+            <div class="products" id="products">
+
+                <div class="product" data-name="Апельсин и мята Special" data-price="700" data-category="black">
+                    <h2>Апельсин и мята Special</h2>
+                    <img src="images/orange.jpg" alt="Апельсин и мята Special" width="300">
+                    <p class="price">Цена: 700 р</p>
+                    <p><a href="Orange.html">Подробнее:</a></p>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+                
+                <div class="product" data-name="Чёрный самурай" data-price="750" data-category="black">
+                    
+                    <h2>Чёрный самурай</h2>
+                    <img src="images/Chernyy-samuray.jpg" alt="Чёрный самурай" width="300">
+                    <p class="price">Цена: 750 р</p>
+                    <p><a href="Black.html">Подробнее:</a></p>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Сердце Сибири" data-price="800" data-category="puer">   
+                    <h2>Сердце Сибири</h2>
+                    <img src="images/heart.jpg" alt="Сердце Сибири" width="300">
+                    <p class="price">Цена: 800 р</p>
+                    <p><a href="Heart.html">Подробнее:</a></p>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+
+                <div class="product" data-name="Мятный бриз" data-price="650" data-category="black">
+                    <h2>Мятный бриз</h2>
+                    <img src="images/myatnii_briz.jpg" alt="Мятный бриз" width="300">
+                    <p class="price">Цена: 650 р</p>
+                    <p><a href="mint.html">Подробнее:</a></p>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+                
+                <div class="product" data-name="Жемчужина дракона PREMIUM" data-price="2000" data-category="green">
+                    <h2>Жемчужина дракона PREMIUM</h2>
+                    <img src="images/Dragon.jpg" alt="Жемчужина дракона PREMIUM" width="300">
+                    <p class="price">Цена: 2000 р</p>
+                    <p><a href="dragon.html">Подробнее:</a></p>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <hr>
+        </main>
+
+        <footer>
+            <p>&copy;Все права защищены</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
