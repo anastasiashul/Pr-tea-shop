@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     LoadCart();
     renderCart();
+    setupViewCartbtn();
 })
 
 function dataforcart(btn){
@@ -108,6 +109,7 @@ const addToCart = function(name, price) {
     cart.push({ name, price });
     saveCart();
     renderCart();
+    
 };
 
 
@@ -121,4 +123,22 @@ const LoadCart = function(){
 }
 const saveCart = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function setupViewCartbtn(){
+    const viewbtn = document.getElementById('view-cart-btn');
+    const viewcart = document.getElementById('cart');
+    
+    viewbtn.addEventListener('click', () => {
+        const isHidden = viewcart.style.display=='none';
+        if (isHidden){
+            viewcart.style.display='block';
+            viewbtn.innerHTML='Скрыть корзину';
+
+        }
+        else{
+            viewcart.style.display='none';
+            viewbtn.innerHTML='Показать корзину';
+        }
+    })
 }

@@ -29,18 +29,24 @@
                     <option value="puer">Пуэр</option>
                 </select>
             </div>
-            <div class="cart">
-                <h2>Корзина</h2>
-                
-                <div id="cart-items">
+            <div class ="cart-container">
+                <button id="view-cart-btn">Показать корзину</button>
 
+                <div class="cart" id="cart" style="display: none;">
+                    <h2>Корзина</h2>
+                    
+                    <div id="cart-items">
+
+                    </div>
+                    <div id="cart-total" class="cart-total">Итого: 0 р</div>
+                    <div class="cart-buttons">
+                        <button id="clear-cart">Очистить корзину</button>
+                        <button id="checkout">Оплатить</button>
+                    </div>
                 </div>
-                <div id="cart-total" class="cart-total">Итого: 0 р</div>
-                <div class="cart-buttons">
-                    <button id="clear-cart">Очистить корзину</button>
-                    <button id="checkout">Оплатить</button>
-                </div>
+
             </div>
+            
 
             <div class="products" id="products">
 

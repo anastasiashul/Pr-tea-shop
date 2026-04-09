@@ -92,7 +92,7 @@ nav ul li:last-of-type a{
     
 }
 
-.cart {
+.cart-container {
     background: rgb(188, 236, 224);
     border: 2px solid rgb(2, 224, 183);
     border-radius: 5px;
