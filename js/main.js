@@ -27,6 +27,7 @@ function renderCart(){
         btn.addEventListener('click', () => {
             const index = Number(btn.dataset.index);
             cart.splice(index, 1);
+            saveCart();
             renderCart();
         });
     });
@@ -44,6 +45,7 @@ const clearCart = () => {
         return;
     }
     cart = [];
+    saveCart();
     renderCart();
     alert('Корзина очищена');
 };
@@ -54,6 +56,7 @@ function checkout(){
     }
     alert('Покупка прошла успешно!');
     cart=[];
+    saveCart();
     renderCart();
 }
 
@@ -91,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutbtn= document.getElementById('checkout');
     if (checkoutbtn) checkoutbtn.addEventListener('click', checkout);
 
+    LoadCart();
     renderCart();
 })
 
@@ -102,5 +106,19 @@ function dataforcart(btn){
 }
 const addToCart = function(name, price) {
     cart.push({ name, price });
+    saveCart();
     renderCart();
 };
+
+
+
+const LoadCart = function(){
+    const savedCart= localStorage.getItem("cart");
+    if (savedCart){
+        cart= JSON.parse(savedCart);
+        renderCart();
+    }
+}
+const saveCart = () => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
