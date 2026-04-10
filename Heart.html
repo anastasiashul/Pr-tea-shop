@@ -10,49 +10,50 @@
     <header>
         <nav>
             <ul>
-            <li><a href="index.html" >Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="index.html" >Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
             </ul>
         </nav>
         <hr>
     </header>
     <main>
         <div class ="cart-container">
-                <button id="view-cart-btn">Показать корзину</button>
+            <button id="view-cart-btn">Показать корзину</button>
+            <div class="cart" id="cart" style="display: none;">
+                <h2>Корзина</h2>
+                <div id="cart-items">
 
-                <div class="cart" id="cart" style="display: none;">
-                    <h2>Корзина</h2>
-                    
-                    <div id="cart-items">
-
-                    </div>
-                    <div id="cart-total" class="cart-total">Итого: 0 р</div>
-                    <div class="cart-buttons">
-                        <button id="clear-cart">Очистить корзину</button>
-                        <button id="checkout">Оплатить</button>
-                    </div>
                 </div>
+                <div id="cart-total" class="cart-total">Итого: 0 р</div>
+                <div class="cart-buttons">
+                    <button id="clear-cart">Очистить корзину</button>
+                    <button id="checkout">Оплатить</button>
+                </div>
+            </div>
+        </div>
 
+        <div class="product" data-name="Сердце Сибири" data-price="800" data-category="puer">
+            <h1>Сердце Сибири</h1>
+            <a href="images/heart.jpg" target="_blank" ><img src="images/heart.jpg" alt="Сердце Сибири" width="500">
+            </a>
+            <div class="information">
+                <h2>Описание</h2>
+                <p id="short">Плотный и насыщенный купаж на основе черного чая, шу-пуэра и гречишного чая.</p>
+                <p class="price">Цена: 800 р</p> 
+                <button class="add-to-cart">Добавить в корзину</button>
+                <h2>Характеристики:</h2>
+                <div class="param">
+                    <ul>
+                        <li>3-4 грамма на чашку 200 мл</li>
+                        <li>85-95 °C, 3-5 минут после закипания</li>
+                        <li>3-5 минут дать на заваривание</li>
+                    </ul>
+                </div>
+                <h2>Подробное описание</h2>
+                <p>Плотный и насыщенный купаж на основе черного чая, шу-пуэра и гречишного чая. Дополнен ягодами ежевики и барбариса, ароматной душицей и украшен шишками, придающими настою легкий хвойный оттенок.</p>
             </div>
-        <h1>Сердце Сибири</h1>
-        <a href="images/heart.jpg" target="_blank" ><img src="images/heart.jpg" alt="Сердце Сибири" width="500">
-        </a>
-        <div class="information">
-            <h2>Описание</h2>
-            <p id="short">Плотный и насыщенный купаж на основе черного чая, шу-пуэра и гречишного чая.</p>
-            <h2>Характеристики:</h2>
-            <div class="param">
-                <ul>
-                    <li>3-4 грамма на чашку 200 мл</li>
-                    <li>85-95 °C, 3-5 минут после закипания</li>
-                    <li>3-5 минут дать на заваривание</li>
-                </ul>
-            </div>
-            <h2>Подробное описание</h2>
-            <p>Плотный и насыщенный купаж на основе черного чая, шу-пуэра и гречишного чая. Дополнен ягодами ежевики и барбариса, ароматной душицей и украшен шишками, придающими настою легкий хвойный оттенок.</p>
         </div>
     </main>
-        
     <footer>
         <hr>
         <p>&copy;Все права защищены</p>

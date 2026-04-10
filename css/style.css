@@ -89,8 +89,8 @@ nav ul li:last-of-type a{
     background: rgb(217, 249, 238);
     font-size: 16px;
     color: rgb(50, 50, 50);
-    
 }
+
 
 .cart-container {
     background: rgb(188, 236, 224);
@@ -104,7 +104,7 @@ nav ul li:last-of-type a{
     padding-bottom: 5px;
 }
 .cart-item {
-    padding: 5px;
+    padding-bottom: 5px;
     border-bottom: 2px solid rgb(2, 172, 246);
 }
 .remove-btn {
@@ -114,6 +114,14 @@ nav ul li:last-of-type a{
     border-radius: 5px;
     font-size: 15px;
     padding: 5px 12px;
+    margin-bottom: 5px;
+}
+.remove-btn:active {
+    background: rgb(249, 171, 171);
+    transform: translateY(2px);
+}
+.cart-total {
+    margin: 5px 0px;
 }
 
 #clear-cart {
@@ -124,6 +132,10 @@ nav ul li:last-of-type a{
     border-radius: 5px;
     padding: 5px 12px;
 }
+#clear-cart:active {
+    background: rgb(249, 171, 171);
+    transform: translateY(2px);
+}
 #checkout {
     background: rgb(219, 251, 231);
     color: rgb(3, 173, 17);
@@ -132,14 +144,23 @@ nav ul li:last-of-type a{
     border-radius: 5px;
     padding: 5px 12px;
 }
+#checkout:active {
+    background: rgb(192, 245, 177);
+    transform: translateY(2px);
+}
+
 .products {
     border: 1px solid rgb(114, 170, 247);
     border-radius: 5px;
 }
 .product {
     padding: 15px;
+    
+}
+.products .product {
     border: 2px solid rgb(3, 191, 144);
     border-radius: 10px;
+
 }
 .add-to-cart {
     background: rgb(219, 247, 211);
@@ -148,5 +169,20 @@ nav ul li:last-of-type a{
     padding: 5px 12px;
     border-radius: 5px;
     font-size: 15px;
-    margin-top: 5px;
+}
+.add-to-cart:active {
+    background: rgb(192, 245, 177);
+    transform: translateY(2px);
+}
+#view-cart-btn {
+    background: rgb(179, 229, 251);
+    color: rgb(1, 60, 112);
+    border: 1px solid rgb(0, 140, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 12px;
+}
+#view-cart-btn:active {
+    background: rgb(151, 224, 255);
+    transform: translateY(2px);
 }
