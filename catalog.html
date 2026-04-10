@@ -10,12 +10,10 @@
         <header>
             <nav>
                 <ul>
-                <li><a href="index.html" >Главная</a></li>
-                <li><a href="catalog.html" >Каталог</a></li>
-            </ul>
-
+                    <li><a href="index.html" >Главная</a></li>
+                    <li><a href="catalog.html" >Каталог</a></li>
+                </ul>
             </nav>
-            
         </header>
         <main>
             <hr>
@@ -29,21 +27,23 @@
                     <option value="puer">Пуэр</option>
                 </select>
             </div>
-            <div class="cart">
-                <h2>Корзина</h2>
-                
-                <div id="cart-items">
 
-                </div>
-                <div id="cart-total" class="cart-total">Итого: 0 р</div>
-                <div class="cart-buttons">
-                    <button id="clear-cart">Очистить корзину</button>
-                    <button id="checkout">Оплатить</button>
+            <div class ="cart-container">
+                <button id="view-cart-btn">Показать корзину</button>
+                <div class="cart" id="cart" style="display: none;">
+                    <h2>Корзина</h2>
+                    <div id="cart-items">
+
+                    </div>
+                    <div id="cart-total" class="cart-total">Итого: 0 р</div>
+                    <div class="cart-buttons">
+                        <button id="clear-cart">Очистить корзину</button>
+                        <button id="checkout">Оплатить</button>
+                    </div>
                 </div>
             </div>
 
             <div class="products" id="products">
-
                 <div class="product" data-name="Апельсин и мята Special" data-price="700" data-category="black">
                     <h2>Апельсин и мята Special</h2>
                     <img src="images/orange.jpg" alt="Апельсин и мята Special" width="300">
@@ -53,7 +53,6 @@
                 </div>
                 
                 <div class="product" data-name="Чёрный самурай" data-price="750" data-category="black">
-                    
                     <h2>Чёрный самурай</h2>
                     <img src="images/Chernyy-samuray.jpg" alt="Чёрный самурай" width="300">
                     <p class="price">Цена: 750 р</p>
@@ -85,10 +84,8 @@
                     <button class="add-to-cart">Добавить в корзину</button>
                 </div>
             </div>
-
             <hr>
         </main>
-
         <footer>
             <p>&copy;Все права защищены</p>
         </footer>

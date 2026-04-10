@@ -10,36 +10,53 @@
     <header>
         <nav>
             <ul>
-            <li><a href="index.html" >Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="index.html" >Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
             </ul>
         </nav>
         <hr>
     </header>
     <main>
-        <h1>Жемчужина дракона PREMIUM</h1>
-        <a href="images/Dragon.jpg" target="_blank" ><img src="images/Dragon.jpg" alt="Жемчужина дракона PREMIUM" width="500">
-        </a>
-        <div class="information">
-            <h2>Описание</h2>
-            <p id="short">Высококачественный китайский зеленый чай.</p>
-            <h2>Характеристики:</h2>
-            <div class="param">
-                <ul>
-                    <li>2-3 грамма на чашку 200 мл</li>
-                    <li>75-85 °C, 10 минут после закипания</li>
-                    <li>1-3 минуты дать на заваривание</li>
-                </ul>
-
+        <div class ="cart-container">
+            <button id="view-cart-btn">Показать корзину</button>
+            <div class="cart" id="cart" style="display: none;">
+                <h2>Корзина</h2>
+                <div id="cart-items">
+                </div>
+                <div id="cart-total" class="cart-total">Итого: 0 р</div>
+                <div class="cart-buttons">
+                    <button id="clear-cart">Очистить корзину</button>
+                    <button id="checkout">Оплатить</button>
+                </div>
             </div>
+        </div>
 
-            <h2>Подробное описание</h2>
-            <p>Высококачественный китайский зеленый чай. Напиток имеет утонченный цветочно-медовый аромат и освежающий эффект.</p>
+        <div class="product" data-name="Жемчужина дракона PREMIUM" data-price="2000" data-category="green">
+            <h1>Жемчужина дракона PREMIUM</h1>
+            <a href="images/Dragon.jpg" target="_blank" ><img src="images/Dragon.jpg" alt="Жемчужина дракона PREMIUM" width="500">
+            </a>
+            <div class="information">
+                <h2>Описание</h2>
+                <p id="short">Высококачественный китайский зеленый чай.</p>
+                <p class="price">Цена: 2000 р</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+                <h2>Характеристики:</h2>
+                <div class="param">
+                    <ul>
+                        <li>2-3 грамма на чашку 200 мл</li>
+                        <li>75-85 °C, 10 минут после закипания</li>
+                        <li>1-3 минуты дать на заваривание</li>
+                    </ul>
+                </div>
+                <h2>Подробное описание</h2>
+                <p>Высококачественный китайский зеленый чай. Напиток имеет утонченный цветочно-медовый аромат и освежающий эффект.</p>
+            </div>
         </div>
     </main>
     <footer>
         <hr>
         <p>&copy;Все права защищены</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
